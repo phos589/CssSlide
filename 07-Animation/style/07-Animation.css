@@ -1,0 +1,116 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: lightblue;
+  transition: 1s;
+}
+.slide{
+background: lightcoral;
+}
+.container{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background: rgba(0,0,0,0.125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .box h2{
+ color: whitesmoke; 
+ font-size: 1.2em;
+}
+.container .box button{
+  cursor: pointer;
+  padding: 10px 20px;
+  background: whitesmoke;
+  color: #334;
+  font-size: 12px;
+}
+.boxText{
+  position: absolute;
+  left: 50px;
+  width: 350px;
+  height: 480px;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0px 5px 25px rgba(0,0,0,0.15);
+  transition: 1s;
+  overflow: hidden;
+}
+.slide .boxText{
+  left: 400px;
+}
+.boxText .form{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxText .form.shinInForm{
+ top: 100%;
+ transition: 0.5s;
+}
+.slide .boxText .form.shinInForm{
+  top: 0;
+}
+.boxText .form.shinUpForm{
+  top: 0;
+  transition: 0.5s;
+ }
+ .slide .boxText .form.shinUpForm{
+   top: 100%;
+ }
+ .boxText .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .boxText .form form h3{
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+ }
+ .boxText .form form input{
+  width: 100%;
+  border:  1px solid #334;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+ }
+ .boxText .form form button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  color: whitesmoke;
+ }
+ .shinUpBut{
+  background: rgb(133, 209, 235);
+ }
+ .shinInBut{
+  background: lightcoral;
+ }
